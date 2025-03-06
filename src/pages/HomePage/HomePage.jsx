@@ -24,8 +24,8 @@ function HomePage() {
           <CardComponent></CardComponent>
         </div>
         <ButtomComponent
-          sizeW={25}
-          sizeH={70}
+          sizeW={70}
+          sizeH={25}
           textButton="Xem Thêm"
         ></ButtomComponent>
       </div>

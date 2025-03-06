@@ -4,6 +4,7 @@
     "module": "commonjs",
     "jsx": "react-jsx",
     "esModuleInterop": true,
+    "allowJs": true,  
     "forceConsistentCasingInFileNames": true,
     "strict": true,
     "skipLibCheck": true

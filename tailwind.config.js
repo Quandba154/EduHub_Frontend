@@ -44,8 +44,17 @@ export default {
         lg: "960px",
         xl: "1200px",
       },
+      // animation: {
+      //   "header-nav": "slidedown 2s cubic-bezier(.19,1,.22,1) forwards",
+      // },
+      keyframes: {
+        rotateFull: {
+          "0%": { transform: "rotate(0deg)" },
+          "100%": { transform: "rotate(360deg)" },
+        },
+      },
       animation: {
-        "header-nav": "slidedown 2s cubic-bezier(.19,1,.22,1) forwards",
+        "rotate-full": "rotateFull 20s infinite linear", // Xoay tròn trong 3 giây
       },
     },
   },

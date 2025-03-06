@@ -9,7 +9,7 @@ function ButtonComponent(props) {
     <WrapperButtonShare>
       <Button
         className="bg-[#FF9966] shadow-none font-medium transition-colors hover:!bg-[#d87c5a] "
-        style={{ padding: `${sizeW}px ${sizeH}px` }}
+        style={{ padding: `${sizeH}px ${sizeW}px` }}
       >
         <WrapperButtonText>{textButton}</WrapperButtonText>
       </Button>

@@ -82,7 +82,7 @@ import StickyNote from "../../models/StickyNote";
 import Pencil from "../../models/Pencil";
 import CoffeeModel from "../../models/CoffeeModel";
 import BookModel from "../../models/BookModel";
-import SignInForm from "./SignInForm";
+import SignInForm from "./SignUpForm";
 
 interface ModelProps {
   position: [number, number, number];
@@ -219,6 +219,7 @@ function SignInPage() {
         alt="Mô tả ảnh"
         className="absolute top-[10px] left-0 w-[400px] h-[200px] animate-rotate-full"
       />
+
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50 rounded-lg shadow-lg">
         <SignInForm />
       </div>
