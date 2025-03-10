@@ -82,7 +82,7 @@ import StickyNote from "../../models/StickyNote";
 import Pencil from "../../models/Pencil";
 import CoffeeModel from "../../models/CoffeeModel";
 import BookModel from "../../models/BookModel";
-import SignInForm from "./SignUpForm";
+import SignUpForm from "./SignUpForm";
 
 interface ModelProps {
   position: [number, number, number];
@@ -137,7 +137,13 @@ function SignInPage() {
           />
           <RotatingModel
             ModelComponent={BookModel}
-            position={[5, -1.5, -2]}
+            position={[5, -4.5, -2]}
+            rotation={[0, 1, -1.2]}
+            scale={[0.004, 0.004, 0.004]}
+          />
+          <RotatingModel
+            ModelComponent={BookModel}
+            position={[2, -1.5, -2]}
             rotation={[0, 1, -1.2]}
             scale={[0.004, 0.004, 0.004]}
           />
@@ -152,12 +158,18 @@ function SignInPage() {
             ModelComponent={StickyNote}
             position={[2, 2, 0]}
             rotation={[0.3, 0.8, 0.2]}
-            scale={[0.04, 0.04, 0.04]}
+            scale={[0.02, 0.02, 0.02]}
+          />
+          <RotatingModel
+            ModelComponent={StickyNote}
+            position={[-1, 2, 0]}
+            rotation={[0.3, 0.8, 0.2]}
+            scale={[0.02, 0.02, 0.02]}
           />
 
           <RotatingModel
             ModelComponent={Pencil}
-            position={[5, -2, -0.5]}
+            position={[6, -2, -0.5]}
             rotation={[0, 1, -1.1]}
             scale={[0.003, 0.003, 0.003]}
           />
@@ -176,7 +188,13 @@ function SignInPage() {
           />
           <RotatingModel
             ModelComponent={RuleModel}
-            position={[8, 4, -1]}
+            position={[6, 4, -1]}
+            rotation={[0.1, 1, -1.3]}
+            scale={[0.0035, 0.0035, 0.0035]}
+          />
+          <RotatingModel
+            ModelComponent={RuleModel}
+            position={[-5, 4, -1]}
             rotation={[0.1, 1, -1.3]}
             scale={[0.0035, 0.0035, 0.0035]}
           />
@@ -185,16 +203,15 @@ function SignInPage() {
             enablePan={false}
             enableRotate={false}
           />
-
           <RotatingModel
             ModelComponent={CoffeeModel}
-            position={[4, 1.5, -1]}
+            position={[4, -0.5, -1]}
             rotation={[2, 1.2, -1]}
             scale={[0.003, 0.003, 0.003]}
           />
           <RotatingModel
             ModelComponent={CoffeeModel}
-            position={[-2, 1.5, -1]}
+            position={[-2, 2.5, -1]}
             rotation={[2, 1.2, -1]}
             scale={[0.003, 0.003, 0.003]}
           />
@@ -211,6 +228,12 @@ function SignInPage() {
             rotation={[2, 1.5, -1.3]}
             scale={[0.007, 0.007, 0.007]}
           />
+          <RotatingModel
+            ModelComponent={Triangle}
+            position={[0.5, 2, -0.5]}
+            rotation={[2, 1.5, -1.3]}
+            scale={[0.007, 0.007, 0.007]}
+          />
         </Canvas>
       </div>
 
@@ -219,9 +242,19 @@ function SignInPage() {
         alt="Mô tả ảnh"
         className="absolute top-[10px] left-0 w-[400px] h-[200px] animate-rotate-full"
       />
+      <img
+        src="../../blood-report.svg"
+        alt="Mô tả ảnh"
+        className="absolute  top-[100px] left-[1000px] w-[400px] h-[200px] animate-rotate-full"
+      />
+      <img
+        src="../../online-study.svg"
+        alt="Mô tả ảnh"
+        className="absolute  top-[350px] left-[1000px] w-[400px] h-[200px] animate-rotate-full"
+      />
 
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50 rounded-lg shadow-lg">
-        <SignInForm />
+        <SignUpForm />
       </div>
     </div>
   );

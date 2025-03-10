@@ -27,7 +27,7 @@ export const WrapperButtonShare = styled.button`
 
   &:hover {
     filter: brightness(1.1);
-    box-shadow: 6px 6px 0px black;
+    box-shadow: 2px 2px 0px black;
   }
 
   &:active {

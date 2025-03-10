@@ -1,6 +1,7 @@
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import InputComponent from "../../components/InputComponent/InputComponent";
+import InputPassWord from "../../components/InputComponent/InputPassWord";
 import LoginSchema from "../../utils/validateSchema";
 import ButtonComponent from "../../components/ButtomComponent/ButtomComponent";
 import { Checkbox } from "antd";
@@ -12,9 +13,9 @@ const SignInForm = () => {
   return (
     <WrapperButtonShare
       style={{
-        background: "rgba(255, 255, 255, 0.3)", 
-        backdropFilter: "blur(10px)", 
-        WebkitBackdropFilter: "blur(10px)", 
+        background: "rgba(255, 255, 255, 0.3)",
+        backdropFilter: "blur(10px)",
+        WebkitBackdropFilter: "blur(10px)",
       }}
       className="flex justify-center items-center border-none bg-white/70 z-50 h-[600px] w-[450px]"
     >
@@ -42,9 +43,8 @@ const SignInForm = () => {
               <label className="flex text-[14px] mt-[14px] mb-2 font-bold">
                 Password
               </label>
-              <InputComponent
+              <InputPassWord
                 title="Nhập mật khẩu của bạn"
-                keyboardType="password"
                 onChangeText={handleChange("password")}
                 onBlur={handleBlur("password")}
                 value={values.password}

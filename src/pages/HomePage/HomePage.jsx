@@ -1,6 +1,4 @@
-import CardComponent from "../../components/CardComponent/CardComponent";
-import TypeProductWrap from "../TypeProduct/TypeProductWrap";
-import ButtomComponent from "../../components/ButtomComponent/ButtomComponent";
+import { WrapperButtonShare } from "./HomePageStyle";
 
 function HomePage() {
   return (
@@ -12,26 +10,27 @@ function HomePage() {
           flexDirection: "column",
           alignItems: "center",
         }}
-        className="mt-5"
+        className="mt-5 h-[650px] flex justify-center"
       >
-        <div className="h-[620px] bg-[#F5F3EA] gap-[60px] flex flex-wrap">
-          <CardComponent></CardComponent>
-          <CardComponent></CardComponent>
-          <CardComponent></CardComponent>
-          <CardComponent></CardComponent>
-          <CardComponent></CardComponent>
-          <CardComponent></CardComponent>
-          <CardComponent></CardComponent>
+        <div className=" flex justify-center items-center">
+          <h1 className="text-[80px]  text-center ">
+            <div className="flex flex-row">
+              <h1 className="font-poppins">Nền tảng</h1>
+              <h1 className="text-[#e9956b]">kết nối và tương tác</h1>
+            </div>
+            <h1>học tập hàng đầu</h1>
+          </h1>
         </div>
-        <ButtomComponent
-          sizeW={70}
-          sizeH={25}
-          textButton="Xem Thêm"
-        ></ButtomComponent>
+        <div className="flex flex-row gap-[20px]">
+          <WrapperButtonShare style={{ padding: "16px 38px" }}>
+            Products 1
+          </WrapperButtonShare>
+          <WrapperButtonShare style={{ padding: "16px 38px" }}>
+            Products 2
+          </WrapperButtonShare>
+        </div>
       </div>
-
-      {/* --- */}
-      <div className="h-[0px]">
+      <div className="h-[90px] bg-[#FF9966]">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 800 80"
@@ -40,7 +39,7 @@ function HomePage() {
           <path
             fill="#f5f3ea"
             fillOpacity="0.8"
-            stroke="#FF9966"
+            // stroke="#FF9966"
             strokeWidth="3"
             strokeLinejoin="round"
             transform="scale(1, -1) translate(0, -47)"
@@ -89,7 +88,6 @@ function HomePage() {
           />
         </svg>
       </div>
-      <TypeProductWrap></TypeProductWrap>
     </div>
   );
 }

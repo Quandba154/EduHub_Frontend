@@ -1,6 +1,7 @@
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import InputComponent from "../../components/InputComponent/InputComponent";
+import InputPassWord from "../../components/InputComponent/InputPassWord";
 import LoginSchema from "../../utils/validateSchema";
 import ButtonComponent from "../../components/ButtomComponent/ButtomComponent";
 import { Checkbox } from "antd";
@@ -40,20 +41,20 @@ const SignInForm = () => {
                 error={errors.email}
               />
               <label className="flex text-[14px]  font-bold">Password</label>
-              <InputComponent
+              <InputPassWord
                 title="Nhập mật khẩu của bạn"
-                keyboardType="password"
+                // keyboardType="password"
                 onChangeText={handleChange("password")}
                 onBlur={handleBlur("password")}
                 value={values.password}
                 error={errors.password}
               />
-              <label className="flex text-[14px] font-bold">
+              <label className="flex text-[14px] mt-3 font-bold">
                 Xác nhận mật khẩu
               </label>
-              <InputComponent
+              <InputPassWord
                 title="Nhập mật khẩu của bạn"
-                keyboardType="password"
+                // keyboardType="password"
                 onChangeText={handleChange("password")}
                 onBlur={handleBlur("password")}
                 value={values.password}

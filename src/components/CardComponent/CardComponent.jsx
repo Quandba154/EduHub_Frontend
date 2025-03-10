@@ -41,7 +41,11 @@ function CardComponent() {
           <WrapperStyleTextSell> | Đã Bán 1000+</WrapperStyleTextSell>
         </WrapperReportText>
         <WrapperPriceText>
-          1.000.000 đ <WrapperDiscountText>-20%</WrapperDiscountText>
+          1.000.000 đ{" "}
+          <WrapperDiscountText>
+            <span style={{ marginRight: "5px" }}></span>
+            -20%
+          </WrapperDiscountText>
         </WrapperPriceText>
       </Card>
     </WrapperProduct>

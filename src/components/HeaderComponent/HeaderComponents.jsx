@@ -17,10 +17,10 @@ function HeaderComponents() {
   return (
     <div className="z-10 flex flex-col  top-0 left-0 w-full ">
       <WrapperHeader gutter={16}>
-        <Col span={6}>
+        <Col span={5}>
           <WrapperHeaderText>EDUHUB</WrapperHeaderText>
         </Col>
-        <Col span={10}>
+        <Col span={11}>
           <ButtonInputSearch
             className="font-medium"
             size="large"

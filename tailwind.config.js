@@ -54,7 +54,7 @@ export default {
         },
       },
       animation: {
-        "rotate-full": "rotateFull 20s infinite linear", // Xoay tròn trong 3 giây
+        "rotate-full": "rotateFull 20s infinite linear",
       },
     },
   },
